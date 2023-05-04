@@ -21,17 +21,35 @@
 
 <h3 align="left">Tech Stack:</h3>
 <p align="left"> <img
-  src="https://img.shields.io/badge/JavaScript-#F7DF1E?style=for-the-badge&logo=javascript&logoColor=#F7DF1E"
+  src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
 />
 <img
   src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+/>
+  </p>
+  <p align="left"> 
+ <img
+  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+  alt=""
+/>
+<img
+  src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+  alt=""
+/>
+  <img
+  src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"
+  alt=""
+/>
+  <img
+  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+  alt=""
 />
 <img
   src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
   alt=""
 />
 <img
-  src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+  src="https://img.shields.io/badge/Express.js-white?style=for-the-badge&logo=express&logoColor=black"
   alt=""
 />
 <img
@@ -47,10 +65,6 @@
   alt=""
 />
 <img
-  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-  alt=""
-/>
-<img
   src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
   alt=""
 />
@@ -63,21 +77,13 @@
   alt=""
 />
 <img
-  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-  alt=""
-/>
-<img
-  src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-  alt=""
-/>
-<img
   src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"
   alt=""
 />
 <img
   src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"
   alt=""
-/></p>
+/>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pichborithk&show_icons=true&locale=en&layout=compact" alt="pichborithk" /></p>
 
