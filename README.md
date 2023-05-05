@@ -1,4 +1,4 @@
-[![MasterHead](https://i.ibb.co/kh8YyJL/2.png)
+![MasterHead](https://i.ibb.co/kh8YyJL/2.png)
 
 <h1 align="center">Hi 👋, I'm Pichborith Kong</h1>
 <h3 align="center">A passionate FullStack Developer from Cambodia</h3>
