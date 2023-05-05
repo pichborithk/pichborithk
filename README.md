@@ -3,6 +3,8 @@
 <h1 align="center">Hi 👋, I'm Pichborith Kong</h1>
 <h3 align="center">A passionate FullStack Developer from Cambodia</h3>
 
+<img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=pichborithk&label=Profile%20views&color=0e75b6&style=flat" alt="pichborithk" /> </p>
 
 - 🌱 I’m currently learning **DevOps**
@@ -109,8 +111,8 @@
   />
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pichborithk&show_icons=true&locale=en&layout=compact" alt="pichborithk" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pichborithk&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="pichborithk" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=pichborithk&show_icons=true&locale=en" alt="pichborithk" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=pichborithk&show_icons=true&locale=en&theme=tokyonight" alt="pichborithk" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=pichborithk&" alt="pichborithk" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=pichborithk&&theme=tokyonight" alt="pichborithk" /></p>
