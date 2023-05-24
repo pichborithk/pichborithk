@@ -124,6 +124,10 @@
   src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"
   alt=""
   />
+    <img
+  src="https://img.shields.io/badge/Figma-white?style=for-the-badge&logo=figma&logoColor=F24E1E"
+  alt=""
+  />
 </p>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pichborithk&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="pichborithk" /></p>
