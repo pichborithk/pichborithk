@@ -87,6 +87,9 @@
     src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"
     alt=""
   />
+    <img
+    src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"
+  />
 </p>
 <p align="left">
   <img
