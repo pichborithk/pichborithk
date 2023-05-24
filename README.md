@@ -112,6 +112,10 @@
   src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
   alt=""
   />
+     <img
+  src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"
+  alt=""
+  />
   <img
   src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"
   alt=""
