@@ -75,6 +75,10 @@
     src="https://img.shields.io/badge/Express.js-white?style=for-the-badge&logo=express&logoColor=black"
     alt=""
   />
+   <img
+    src="https://img.shields.io/badge/J_W_T-000000?style=for-the-badge&logo=JSONwebtokens&logoColor=white"
+    alt=""
+  />
   <img
     src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
     alt=""
