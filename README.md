@@ -138,6 +138,6 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pichborithk&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="pichborithk" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=pichborithk&show_icons=true&locale=en&theme=tokyonight" alt="pichborithk" /></p>
+<!---<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=pichborithk&show_icons=true&locale=en&theme=tokyonight" alt="pichborithk" /></p> -->
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=pichborithk&&theme=tokyonight" alt="pichborithk" /></p>
