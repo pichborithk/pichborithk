@@ -1,6 +1,5 @@
 ![MasterHead](https://i.ibb.co/B4mjw4V/2.png)
 
-
 <h1 align="center">Hi 👋, I'm Pichborith Kong</h1>
 <h3 align="center">A passionate FullStack Developer from Cambodia</h3>
 
@@ -18,26 +17,27 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/pichborith_kong" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="pichborith_kong" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/pichborith" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="pichborith" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/21820924/qrecca" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="21820924/qrecca" height="30" width="40" /></a>
-<a href="https://fb.com/pichborithkong" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="pichborithkong" height="30" width="40" /></a>
+  <a href="https://twitter.com/pichborith_kong" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="pichborith_kong" height="30" width="40" />
+  </a>
+  <a href="https://linkedin.com/in/pichborith" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="pichborith" height="30" width="40" />
+  </a>
+  <a href="https://stackoverflow.com/users/21820924/qrecca" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="21820924/qrecca" height="30" width="40" />
+  </a>
+  <a href="https://fb.com/pichborithkong" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="pichborithkong" height="30" width="40" />
+  </a>
 </p>
 
 <h3 align="left">Tech Stack:</h3>
-<p align="left">
-  <img
-    src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-  />
-  <img
-    src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-  />
-   <img
-    src="https://img.shields.io/badge/Swift-white?style=for-the-badge&logo=swift&logoColor=F05138"
-  />
-   <img
-    src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-  />
+<p align="left"> 
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="50" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="50" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="50" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="50" height="40"/>
 </p>
 <p align="left"> 
  <img
