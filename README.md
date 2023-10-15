@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **DevOps**
 
-- 💬 Ask me about **Web Developer**
+- 💬 Ask me about **Web Development**
 
 - 📫 How to reach me **pichborith@gmail.com**
 
@@ -32,110 +32,132 @@
 </p>
 
 <h3 align="left">Tech Stack:</h3>
+<!-- Programming Language -->
 <p align="left"> 
-   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="50" height="40"/> 
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="50" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="50" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="50" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
+    alt="javascript" width="50" height="40"
+  />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+    alt="typescript" width="50" height="40"
+  /> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+    alt="python" width="50" height="40"
+  />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+    alt="java" width="50" height="40"
+  />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
+    alt="swift" width="50" height="40"
+  />
 </p>
+<!-- Programming Language -->
+
+<!-- Front End -->
 <p align="left"> 
- <img
-  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-  alt=""
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+  alt="HTML"
   />
-  <img
-    src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-    alt=""
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+    alt="CSS"
   />
-  <img
-  src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-  alt=""
+  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+  alt="SASS"
   />
-  <img
-  src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"
-  alt=""
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"
+  alt="Bootstrap"
   />
-  <img
-  src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-  alt=""
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+  alt="Tailwind CSS"
   />
-  <img
-  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-  alt=""
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+  alt="React.js"
   />
-  <img
-  src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
-  alt=""
-  />
-    <img
-  src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
-  alt=""
+  <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
+  alt="Redux.js"
   />
 </p>
+<!-- Front End -->
+
+<!-- Back End -->
 <p align="left">
-  <img
-    src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
-    alt=""
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+    alt="Node.js"
+  />
+  <img src="https://img.shields.io/badge/Express.js-white?style=for-the-badge&logo=express&logoColor=black"
+    alt="Express.js"
+  />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"
+    alt="Prisma"
+  />
+  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white"
+    alt="GraphQL"
   />
   <img
-    src="https://img.shields.io/badge/Express.js-white?style=for-the-badge&logo=express&logoColor=black"
-    alt=""
-  />
-   <img
-    src="https://img.shields.io/badge/J_W_T-000000?style=for-the-badge&logo=JSONwebtokens&logoColor=white"
-    alt=""
-  />
-  <img
-    src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
-    alt=""
-  />
-  <img
-    src="https://img.shields.io/badge/MONGO_DB-white?style=for-the-badge&logo=mongodb&logoColor=47A248"
-    alt=""
-  />
-  <img
-    src="https://img.shields.io/badge/Supabase-black?style=for-the-badge&logo=supabase&logoColor=3FCF8E"
-    alt=""
-  />
-    <img
-    src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"
-    alt=""
-  />
-    <img
-    src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"
-  />
 </p>
+<!-- Back End -->
+  
+<!-- Database -->
 <p align="left">
-  <img
-  src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"
-  alt=""
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
+    alt="PostgreSQL"
   />
-  <img
-    src="https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"
-    alt=""
+  <img src="https://img.shields.io/badge/MONGO_DB-white?style=for-the-badge&logo=mongodb&logoColor=47A248"
+    alt="MongoDB"
   />
-  <img
-    src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"
-    alt=""
+  <img src="https://img.shields.io/badge/sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"
+    alt="SQLite"
   />
-   <img
-  src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
-  alt=""
+  <img src="https://img.shields.io/badge/Firebase-white?style=for-the-badge&logo=firebase&logoColor=FFCA28"
+    alt="Firebase"
   />
-     <img
-  src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"
-  alt=""
+  <img src="https://img.shields.io/badge/Supabase-black?style=for-the-badge&logo=supabase&logoColor=3FCF8E"
+    alt="Supabase"
   />
-  <img
-  src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"
-  alt=""
-  />
-    <img
-  src="https://img.shields.io/badge/Figma-white?style=for-the-badge&logo=figma&logoColor=F24E1E"
-  alt=""
+  <img src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"
+    alt="Redis"
   />
 </p>
+<!-- Database -->
+
+<!-- Framework -->
+<p align="left">
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
+    alt="Next.js"
+  />
+  <img src="https://img.shields.io/badge/Flask-white?style=for-the-badge&logo=flask&logoColor=black"
+    alt="Flask"
+  />
+</p>
+<!-- Framework -->
+
+<!-- Tools -->
+<p align="left">
+  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"
+    alt="Git"
+  />
+  <img src="https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"
+    alt="Visual Studio Code"
+  />
+<!--   <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"
+    alt="NPM"
+  /> -->
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"
+    alt="Postman"
+  />
+  <img src="https://img.shields.io/badge/J_W_T-000000?style=for-the-badge&logo=JSONwebtokens&logoColor=white"
+    alt="JWT"
+  />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+    alt="Docker"
+  />
+  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"
+    alt="Notion"
+  />
+  <img src="https://img.shields.io/badge/Figma-white?style=for-the-badge&logo=figma&logoColor=F24E1E"
+    alt="Figma"
+  />
+</p>
+<!-- Tools -->
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pichborithk&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide=html,css&langs_count=6" alt="pichborithk" /></p>
 
