@@ -34,7 +34,7 @@
 <h3 align="left">Tech Stack:</h3>
 <!-- Programming Language -->
 <p align="left"> 
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascrip-original.svg" 
     alt="javascript" width="50" height="40"
   />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
