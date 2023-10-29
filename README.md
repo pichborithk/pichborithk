@@ -7,7 +7,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=pichborithk&label=Profile%20views&color=0e75b6&style=flat" alt="pichborithk" /> </p>
 
-- 🌱 I’m currently learning **Backend And Microservices**
+- 🌱 I’m currently learning **Backend And Microservice**
 
 - 💬 Ask me about **Web Development**
 
