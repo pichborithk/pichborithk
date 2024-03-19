@@ -46,6 +46,9 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
     alt="java" width="50" height="40"
   />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+    alt="swift" width="50" height="40"
+  />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
     alt="swift" width="50" height="40"
   />
