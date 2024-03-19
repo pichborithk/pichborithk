@@ -130,6 +130,12 @@
   <img src="https://img.shields.io/badge/Flask-white?style=for-the-badge&logo=flask&logoColor=black"
     alt="Flask"
   />
+  <img src="https://img.shields.io/badge/spring-339933?style=for-the-badge&logo=spring&logoColor=white"
+    alt="Flask"
+  />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"
+    alt="Flask"
+  />
 </p>
 <!-- Framework -->
 
