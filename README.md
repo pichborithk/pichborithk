@@ -34,6 +34,7 @@
 <h3 align="left">Tech Stack:</h3>
 <!-- Programming Language -->
 <p align="left"> 
+  
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
     alt="javascript" width="50" height="40"
   />
@@ -52,6 +53,10 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
     alt="swift" width="50" height="40"
   />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
+    alt="swift" width="50" height="40"
+  />
+   
 </p>
 <!-- Programming Language -->
 
