@@ -32,9 +32,15 @@
 </p>
 
 <h3 align="left">Tech Stack:</h3>
+
 <!-- Programming Language -->
 <p align="left"> 
-  
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+      alt="html" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+      alt="css" width="50" height="40"
+  />   
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
     alt="javascript" width="50" height="40"
   />
@@ -45,29 +51,20 @@
     alt="java" width="50" height="40"
   />
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
-    alt="swift" width="50" height="40"
+    alt="golang" width="50" height="40"
   />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
     alt="python" width="50" height="40"
   />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-    alt="swift" width="50" height="40"
+    alt="c#" width="50" height="40"
   />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
     alt="swift" width="50" height="40"
   />
 
 </p>
-
-<p>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
-      alt="html" width="50" height="40"
-    />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
-      alt="css" width="50" height="40"/>   
-</p>
-       
-          
+           
 <!-- Programming Language -->
 
 <!-- Front End -->
@@ -93,6 +90,9 @@
   <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
   alt="Redux.js"
   />
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
+    alt="Next.js"
+  />
   <img src="https://img.shields.io/badge/UIKIT-white?style=for-the-badge&logo=uikit&logoColor=206ce4"
     alt="UIKit"
   />
@@ -110,13 +110,18 @@
   <img src="https://img.shields.io/badge/Express.js-white?style=for-the-badge&logo=express&logoColor=black"
     alt="Express.js"
   />
-  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"
-    alt="Prisma"
-  />
   <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white"
     alt="GraphQL"
   />
-  <img
+  <img src="https://img.shields.io/badge/spring-339933?style=for-the-badge&logo=spring&logoColor=white"
+    alt="Spring"
+  />
+  <img src="https://img.shields.io/badge/Flask-white?style=for-the-badge&logo=flask&logoColor=black"
+    alt="Flask"
+  />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"
+    alt=".NET"
+  />
 </p>
 <!-- Back End -->
   
@@ -144,10 +149,14 @@
   <img src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"
     alt="Redis"
   />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"
+    alt="Prisma"
+  />
 </p>
 <!-- Database -->
 
 <!-- Framework -->
+<!-- 
 <p align="left">
   <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
     alt="Next.js"
@@ -162,6 +171,7 @@
     alt=".NET"
   />
 </p>
+-->
 <!-- Framework -->
 
 <!-- Tools -->
@@ -183,6 +193,9 @@
   />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
     alt="Docker"
+  />
+  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
+    alt="Jenkins"
   />
   <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"
     alt="Notion"
