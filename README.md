@@ -34,14 +34,9 @@
 <h3 align="left">Tech Stack:</h3>
 
 <!-- Programming Language -->
-<p align="left"> 
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
-      alt="html" width="50" height="40"
-  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
-      alt="css" width="50" height="40"
-  />   
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
+
+<p align="left">  
+<!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
     alt="javascript" width="50" height="40"
   />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
@@ -61,8 +56,36 @@
   />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
     alt="swift" width="50" height="40"
-  />
+  /> -->
 
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+      alt="html" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+      alt="css" width="50" height="40"
+  />  
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+    alt="javascript" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
+     alt="typescript" width="50" height="40"
+    />  
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" 
+    alt="java" width="50" height="40"
+    />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" 
+      alt="swift" width="50" height="40"
+    />    
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
+    alt="python" width="50" height="40"
+    />      
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" 
+      alt="golang" width="50" height="40"
+    />       
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" 
+    alt="c#" width="50" height="40"
+    />
+          
 </p>
            
 <!-- Programming Language -->
