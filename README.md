@@ -5,7 +5,7 @@
 
 <img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=pichborithk&label=Profile%20views&color=0e75b6&style=flat" alt="pichborithk" /> </p>
+<div align="left"> <img src="https://komarev.com/ghpvc/?username=pichborithk&label=Profile%20views&color=0e75b6&style=flat" alt="pichborithk" /> </div>
 
 - 🌱 I’m currently learning **Cloud And Microservices**
 
@@ -16,7 +16,7 @@
 - ⚡ Fun fact **localhost is the fastest server**
 
 <h3 align="left">Connect with me:</h3>
-<p align="left">
+<div align="left">
   <a href="https://twitter.com/pichborith_kong" target="blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="pichborith_kong" height="30" width="40" />
   </a>
@@ -29,14 +29,43 @@
   <a href="https://fb.com/pichborithkong" target="blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="pichborithkong" height="30" width="40" />
   </a>
-</p>
+</div>
 
 <h3 align="left">Tech Stack:</h3>
 
 <!-- Programming Language -->
 
 <div align="left">
-<!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+      alt="html" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+      alt="css" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+    alt="javascript" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
+     alt="typescript" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" 
+    alt="java" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" 
+      alt="swift" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
+    alt="python" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" 
+      alt="golang" width="50" height="40"
+  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" 
+    alt="c#" width="50" height="40"
+  />
+
+  <!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
     alt="javascript" width="50" height="40"
   />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
@@ -57,36 +86,8 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
     alt="swift" width="50" height="40"
   /> -->
-
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
-      alt="html" width="50" height="40"
-  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
-      alt="css" width="50" height="40"
-  />  
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
-    alt="javascript" width="50" height="40"
-  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
-     alt="typescript" width="50" height="40"
-  />  
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" 
-    alt="java" width="50" height="40"
-  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" 
-      alt="swift" width="50" height="40"
-  />    
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
-    alt="python" width="50" height="40"
-  />      
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" 
-      alt="golang" width="50" height="40"
-  />       
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" 
-    alt="c#" width="50" height="40"
-  />
           
-</p>
+</div>
            
 <!-- Programming Language -->
 
