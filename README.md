@@ -161,15 +161,15 @@
   <img src="https://img.shields.io/badge/MONGO_DB-white?style=for-the-badge&logo=mongodb&logoColor=47A248"
     alt="MongoDB"
   />
-  <img src="https://img.shields.io/badge/sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"
+<!--   <img src="https://img.shields.io/badge/sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"
     alt="SQLite"
-  />
+  /> -->
   <img src="https://img.shields.io/badge/Firebase-white?style=for-the-badge&logo=firebase&logoColor=FFCA28"
     alt="Firebase"
   />
-  <img src="https://img.shields.io/badge/Supabase-black?style=for-the-badge&logo=supabase&logoColor=3FCF8E"
+<!--   <img src="https://img.shields.io/badge/Supabase-black?style=for-the-badge&logo=supabase&logoColor=3FCF8E"
     alt="Supabase"
-  />
+  /> -->
   <img src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"
     alt="Redis"
   />
