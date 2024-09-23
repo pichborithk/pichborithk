@@ -35,7 +35,7 @@
 
 <!-- Programming Language -->
 
-<p align="left">  
+<div align="left">
 <!--   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
     alt="javascript" width="50" height="40"
   />
@@ -69,22 +69,22 @@
   />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
      alt="typescript" width="50" height="40"
-    />  
+  />  
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" 
     alt="java" width="50" height="40"
-    />
+  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" 
       alt="swift" width="50" height="40"
-    />    
+  />    
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
     alt="python" width="50" height="40"
-    />      
+  />      
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" 
       alt="golang" width="50" height="40"
-    />       
+  />       
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" 
     alt="c#" width="50" height="40"
-    />
+  />
           
 </p>
            
