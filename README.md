@@ -41,11 +41,14 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
     alt="typescript" width="50" height="40"
   /> 
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-    alt="python" width="50" height="40"
-  />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
     alt="java" width="50" height="40"
+  />
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
+    alt="swift" width="50" height="40"
+  />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+    alt="python" width="50" height="40"
   />
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
     alt="swift" width="50" height="40"
@@ -53,11 +56,17 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg"
     alt="swift" width="50" height="40"
   />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
-    alt="swift" width="50" height="40"
-  />
-   
+
 </p>
+
+<p>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+      alt="html" width="50" height="40"
+    />
+    
+</p>
+       
+          
 <!-- Programming Language -->
 
 <!-- Front End -->
@@ -83,6 +92,9 @@
   <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
   alt="Redux.js"
   />
+  <img src="https://img.shields.io/badge/SWIFTUI-black?style=for-the-badge&logo=swift&logoColor=206ce4"
+    alt="SwiftUI"
+  />
 </p>
 <!-- Front End -->
 
@@ -105,7 +117,11 @@
 <!-- Back End -->
   
 <!-- Database -->
+
 <p align="left">
+   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=d88b1e"
+    alt="MySQL"
+  />
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
     alt="PostgreSQL"
   />
@@ -132,14 +148,14 @@
   <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
     alt="Next.js"
   />
+  <img src="https://img.shields.io/badge/spring-339933?style=for-the-badge&logo=spring&logoColor=white"
+    alt="Spring"
+  />
   <img src="https://img.shields.io/badge/Flask-white?style=for-the-badge&logo=flask&logoColor=black"
     alt="Flask"
   />
-  <img src="https://img.shields.io/badge/spring-339933?style=for-the-badge&logo=spring&logoColor=white"
-    alt="Flask"
-  />
   <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"
-    alt="Flask"
+    alt=".NET"
   />
 </p>
 <!-- Framework -->
