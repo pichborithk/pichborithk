@@ -13,7 +13,7 @@
 
 - 📫 How to reach me **pichborith@gmail.com**
 
-- ⚡ Fun fact **localhost is the fastest server**
+- ⚡ Fun fact **localhost is the fastest server :P**
 
 <h3 align="left">Connect with me:</h3>
 <div align="left">
