@@ -11,7 +11,7 @@
 
 - 💬 Ask me about **Web Development**
 
-- 📫 How to reach me **pichborith@gmail.com **
+- 📫 How to reach me **pichborith@gmail.com**
 
 - ⚡ Fun fact **localhost is the fastest server**
 
