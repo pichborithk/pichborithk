@@ -1,0 +1,89 @@
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.w3c.dom.*;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.StringReader;
+
+public class FullSoapXmlToJsonObject {
+    public static void main(String[] args) throws Exception {
+        // Example SOAP XML Response
+        String soapXmlResponse = "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">"
+                + "<soap:Header>"
+                + "<AuthToken>ABC123</AuthToken>"
+                + "</soap:Header>"
+                + "<soap:Body>"
+                + "<GetUserResponse>"
+                + "<User>"
+                + "<ID>123</ID>"
+                + "<Name>John Doe</Name>"
+                + "<Age>30</Age>"
+                + "<Active>true</Active>"
+                + "<Balance>5000.75</Balance>"
+                + "<Address>"
+                + "<Street>Main St</Street>"
+                + "<City>New York</City>"
+                + "</Address>"
+                + "<Skills>"
+                + "<Skill>Java</Skill>"
+                + "<Skill>Python</Skill>"
+                + "</Skills>"
+                + "</User>"
+                + "</GetUserResponse>"
+                + "</soap:Body>"
+                + "</soap:Envelope>";
+
+        // Convert XML to JSONObject
+        JSONObject jsonObject = convertXmlToJson(soapXmlResponse);
+
+        // Pretty Print JSON
+        System.out.println(jsonObject.toString(4));
+    }
+
+    public static JSONObject convertXmlToJson(String xml) throws Exception {
+        // Parse XML into DOM
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document = builder.parse(new org.xml.sax.InputSource(new StringReader(xml)));
+
+        // Convert the entire XML tree to JSONObject
+        return convertXmlNodeToJson(document.getDocumentElement());
+    }
+
+    private static JSONObject convertXmlNodeToJson(Node node) {
+        JSONObject jsonObject = new JSONObject();
+        NodeList nodeList = node.getChildNodes();
+
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            Node child = nodeList.item(i);
+            if (child.getNodeType() == Node.ELEMENT_NODE) {
+                String key = child.getNodeName();
+                Object value = convertXmlNodeToJson(child);
+
+                if (child.hasChildNodes() && child.getChildNodes().getLength() == 1 && child.getFirstChild().getNodeType() == Node.TEXT_NODE) {
+                    // If it's a simple text node, store it as a string
+                    jsonObject.put(key, child.getTextContent().trim());
+                } else {
+                    // Handle repeated elements (convert to JSONArray)
+                    if (jsonObject.has(key)) {
+                        Object existingValue = jsonObject.get(key);
+                        JSONArray array;
+                        if (existingValue instanceof JSONArray) {
+                            array = (JSONArray) existingValue;
+                        } else {
+                            array = new JSONArray();
+                            array.put(existingValue);
+                        }
+                        array.put(value);
+                        jsonObject.put(key, array);
+                    } else {
+                        jsonObject.put(key, value);
+                    }
+                }
+            }
+        }
+
+        return jsonObject;
+    }
+}
