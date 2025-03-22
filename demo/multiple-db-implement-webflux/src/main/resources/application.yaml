@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/webfluxdemodb
+      auto-index-creation: true
+
+item:
+  mongodb:
+    uri: mongodb://localhost:27017/webfluxdemodbitem
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
