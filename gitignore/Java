@@ -1,0 +1,226 @@
+############################
+# Mobile Tools for Java (J2ME)
+############################
+.mtj.tmp/
+
+
+############################
+# Virtual Machine crash logs
+############################
+hs_err_pid*
+replay_pid*
+
+
+############################
+# Maven
+############################
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+
+##############################
+## Gradle
+##############################
+bin/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+
+############################
+# Spring Tools Suite
+############################
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.apt_generated
+
+
+############################
+# BlueJ files
+############################
+*.ctxt
+
+
+############################
+# Production
+############################
+build/
+dist
+dist-ssr
+target/
+exports
+!**/src/main/**/target/
+!**/src/test/**/target/
+out/
+
+
+############################
+# Tests
+############################
+/coverage
+*.coverage
+coverage/
+lib-cov
+lcov.info
+*.lcov
+lcov-report/
+testApp
+results/
+
+
+############################
+# Miscellaneous
+############################
+*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+ssl
+pids
+license.txt
+.strapi-updater.json
+HELP.md
+
+
+############################
+# IDE
+############################
+## VS Code
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+.code-workspace
+
+## Jet Brains
+.idea
+.idea/
+.idea_modules/
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+## MS Visual Studio
+*.suo
+*.user
+*.csproj.user
+*.vs
+*.ntvs*
+*.njsproj
+*.sln
+!*.sln
+
+## Vim
+*.sw?
+*#
+
+## NetBeans
+nbproject
+/nbproject/private/
+nbbuild/
+/nbbuild/
+/dist/
+/nbdist/
+/nbdist/
+/.nb-gradle/
+nbactions.xml
+nb-configuration.xml
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+## Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.settings/
+tmp/
+.metadata
+*.tmp
+*.bak
+*~.nib
+local.properties
+.loadpath
+
+
+############################
+# OS
+############################
+## MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+._*
+
+## Linux
+*~
+var/
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+############################
+# Packages
+############################
+*.7z
+*.csv
+*.dat
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.com
+*.dll
+*.exe
+*.o
+*.seed
+*.so
+*.swo
+*.swp
+*.swn
+*.swm
+*.out
+*.pid
+*.war
+*.nar
+*.ear
+*.tar.gz
+# Compiled class file
+*.class
