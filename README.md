@@ -230,8 +230,12 @@
 </p>
 <!-- Tools -->
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pichborithk&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide=html,css&langs_count=6" alt="pichborithk" /></p>
-
-<!---<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=pichborithk&show_icons=true&locale=en&theme=tokyonight" alt="pichborithk" /></p> -->
-
-<p><img align="right" src="https://github-readme-streak-stats.herokuapp.com/?user=pichborithk&&theme=tokyonight" alt="pichborithk" /></p>
+<div>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=pichborithk&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide_border=true&bg_color=1A1B2F&hide=html,css&langs_count=6" alt="pichborithk github readme top-langs" width="39%"/>
+  <img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=pichborithk&theme=github-compact&hide_border=true&bg_color=1A1B2F" alt="pichborithk github readme activity graph" width="60%" />
+</div>
+<br />
+<div>
+  <img align="center" src="https://github-readme-streak-stats-eight.vercel.app/?user=pichborithk&theme=tokyonight&hide_border=true&background=1A1B2F" width="51%" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=pichborithk&layout=compact&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1A1B2F" alt="pichborithk github-readme-stats" width="48%" />
+</div>
