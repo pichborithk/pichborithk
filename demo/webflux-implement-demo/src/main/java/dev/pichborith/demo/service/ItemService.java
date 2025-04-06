@@ -1,7 +1,7 @@
 package dev.pichborith.demo.service;
 
-import dev.pichborith.demo.model.item.Item;
-import dev.pichborith.demo.repository.ItemRepository;
+import dev.pichborith.demo.domain.Item;
+import dev.pichborith.demo.repository.item.ItemRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

@@ -1,5 +1,6 @@
-package dev.pichborith.demo.model.user;
+package dev.pichborith.demo.repository.user;
 
+import dev.pichborith.demo.domain.User;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

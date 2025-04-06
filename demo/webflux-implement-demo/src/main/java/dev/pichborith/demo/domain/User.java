@@ -1,4 +1,4 @@
-package dev.pichborith.demo.model.user;
+package dev.pichborith.demo.domain;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

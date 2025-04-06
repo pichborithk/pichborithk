@@ -1,6 +1,6 @@
-package dev.pichborith.demo.repository;
+package dev.pichborith.demo.repository.item;
 
-import dev.pichborith.demo.model.item.Item;
+import dev.pichborith.demo.domain.Item;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,7 +1,7 @@
 package dev.pichborith.demo.service;
 
-import dev.pichborith.demo.model.user.User;
-import dev.pichborith.demo.repository.UserRepository;
+import dev.pichborith.demo.domain.User;
+import dev.pichborith.demo.repository.user.UserRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

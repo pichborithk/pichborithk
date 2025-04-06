@@ -1,4 +1,4 @@
-package dev.pichborith.demo.model.item;
+package dev.pichborith.demo.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

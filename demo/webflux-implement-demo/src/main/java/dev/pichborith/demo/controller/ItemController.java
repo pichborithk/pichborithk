@@ -1,6 +1,6 @@
 package dev.pichborith.demo.controller;
 
-import dev.pichborith.demo.model.item.Item;
+import dev.pichborith.demo.domain.Item;
 import dev.pichborith.demo.service.ItemService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
