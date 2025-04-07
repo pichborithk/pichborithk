@@ -1,1 +1,14 @@
 rootProject.name = 'webflux-implement-demo'
+
+gradle.ext {
+  junitPlatformLauncherVersion = '1.13.0-M2'
+  lombokVersion = '1.18.38'
+  lombokMapstructBindingVersion = '0.2.0'
+  mapstructVersion = '1.4.2.Final'
+  otelVersion = '1.48.0'
+  otelSpringBootVersion = '2.14.0'
+  otelBaggageProcessorVersion = '1.45.0-alpha'
+  reactorTestVersion = '3.8.0-M1'
+  springBootVersion = '3.4.3'
+  springdocVersion = '2.0.4'
+}

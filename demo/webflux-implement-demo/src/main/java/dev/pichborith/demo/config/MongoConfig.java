@@ -1,36 +1,58 @@
 package dev.pichborith.demo.config;
 
+import com.mongodb.ConnectionString;
+import com.mongodb.MongoClientSettings;
 import com.mongodb.reactivestreams.client.MongoClient;
 import com.mongodb.reactivestreams.client.MongoClients;
+import dev.pichborith.demo.util.OtelMongoListener;
+import io.opentelemetry.api.trace.Tracer;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.springframework.data.mongodb.ReactiveMongoDatabaseFactory;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 
 @Configuration
 public class MongoConfig {
 
-    @Primary
-    @Bean
-    public MongoClient userMongoClient() {
-        return MongoClients.create("mongodb://localhost:27017/webfluxdemodb");
-    }
+  @Value("${spring.data.mongodb.uri.user}")
+  private String userUri;
+  @Value("${spring.data.mongodb.uri.item}")
+  private String itemUri;
 
-    @Primary
-    @Bean
-    public ReactiveMongoTemplate reactiveMongoTemplate(ReactiveMongoDatabaseFactory userFactory) {
-        return new ReactiveMongoTemplate(userMongoClient(), "webfluxdemodb");
-    }
+//  @Bean
+//  public Tracer mongoTracer(OpenTelemetry openTelemetry) {
+//    return openTelemetry.getTracer("MongoDriver");
+//  }
 
-    @Bean
-    public MongoClient itemMongoClient() {
-        return MongoClients.create(
-            "mongodb://localhost:27017/webfluxdemodbitem");
-    }
+  @Primary
+  @Bean
+  public MongoClient userMongoClient(Tracer mongoTracer) {
+    MongoClientSettings settings = MongoClientSettings.builder()
+                                     .applyConnectionString(new ConnectionString(userUri))
+                                     .addCommandListener(new OtelMongoListener(mongoTracer))
+                                     .build();
+    return MongoClients.create(settings);
+  }
 
-    @Bean(name = "itemMongoTemplate")
-    public ReactiveMongoTemplate itemMongoTemplate() {
-        return new ReactiveMongoTemplate(itemMongoClient(), "webfluxdemodbitem");
-    }
+  @Primary
+  @Bean
+  public ReactiveMongoTemplate reactiveMongoTemplate(MongoClient userMongoClient) {
+    return new ReactiveMongoTemplate(userMongoClient, "webfluxdemodbuser");
+  }
+
+  @Bean
+  public MongoClient itemMongoClient(Tracer mongoTracer) {
+    MongoClientSettings settings = MongoClientSettings.builder()
+                                     .applyConnectionString(new ConnectionString(itemUri))
+                                     .addCommandListener(new OtelMongoListener(mongoTracer))
+                                     .build();
+    return MongoClients.create(settings);
+  }
+
+  @Bean(name = "itemMongoTemplate")
+  public ReactiveMongoTemplate itemMongoTemplate(MongoClient itemMongoClient) {
+    return new ReactiveMongoTemplate(itemMongoClient, "webfluxdemodbitem");
+  }
+
 }

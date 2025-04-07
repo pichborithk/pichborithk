@@ -10,8 +10,9 @@ public class SwaggerConfig {
 
   @Bean
   public OpenAPI openAPI() {
-    return new OpenAPI().info(new Info().title("Spring WebFlux with MongoDB API")
-                                        .version("1.0")
-                                        .description("Reactive REST API for managing users with MongoDB."));
+    return new OpenAPI().info(
+      new Info().title("Spring WebFlux with MongoDB API").version("1.0")
+        .description("Reactive REST API for managing users with MongoDB.")
+    );
   }
 }

@@ -1,51 +1,77 @@
 plugins {
-    id 'java'
-    id 'org.springframework.boot' version '3.4.3'
-    id 'io.spring.dependency-management' version '1.1.7'
+  id 'java'
+  id 'org.springframework.boot' version '3.4.3'
+  id 'io.spring.dependency-management' version '1.1.7'
 }
 
 group = 'dev.pichborith'
 version = '0.0.1-SNAPSHOT'
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(17)
+  }
 }
 
 configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
+  compileOnly {
+    extendsFrom annotationProcessor
+  }
 }
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    //	Spring Boot WebFlux and MongoDB
-    implementation 'org.springframework.boot:spring-boot-starter-webflux'
-    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+  configurations.all {
+    resolutionStrategy.eachDependency { details ->
+      if (details.requested.name == 'okhttp') {
+        details.useVersion '4.12.0'
+      }
+      if (details.requested.group == 'io.opentelemetry'
+        && details.requested.name != 'opentelemetry-api-incubator'
+        && details.requested.name != 'opentelemetry-extension-annotations'
+        && details.requested.name != 'opentelemetry-sdk-extension-incubator'
+      ) {
+        details.useVersion '1.48.0'
+      }
+      if (details.requested.group == 'io.opentelemetry-contrib') {
+        details.useVersion '1.45.0-alpha'
+      }
 
-    //	Lombok
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    }
+  }
 
-    // MapStruct
-    implementation 'org.mapstruct:mapstruct:1.4.2.Final'
-    implementation 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
-    implementation 'org.mapstruct:mapstruct-processor:1.4.2.Final'
+  // Spring Boot WebFlux and MongoDB
+  implementation "org.springframework.boot:spring-boot-starter-webflux:${gradle.springBootVersion}"
+  implementation "org.springframework.boot:spring-boot-starter-data-mongodb-reactive:${gradle.springBootVersion}"
 
-    // Swagger
-    implementation 'org.springdoc:springdoc-openapi-starter-webflux-ui:2.6.0'
+  // Lombok
+  compileOnly "org.projectlombok:lombok:${gradle.lombokVersion}"
+  annotationProcessor "org.projectlombok:lombok:${gradle.lombokVersion}"
 
-    //	Test
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'io.projectreactor:reactor-test'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+  // MapStruct
+  implementation "org.mapstruct:mapstruct:${gradle.mapstructVersion}"
+  annotationProcessor "org.mapstruct:mapstruct-processor:${gradle.mapstructVersion}"
+  implementation "org.projectlombok:lombok-mapstruct-binding:${gradle.lombokMapstructBindingVersion}"
+
+  // Swagger / SpringDoc
+  implementation "org.springdoc:springdoc-openapi-starter-webflux-ui:${gradle.springdocVersion}"
+
+  // OpenTelemetry
+  implementation "io.opentelemetry:opentelemetry-api:${gradle.otelVersion}"
+  implementation "io.opentelemetry:opentelemetry-sdk:${gradle.otelVersion}"
+  implementation "io.opentelemetry:opentelemetry-exporter-otlp:${gradle.otelVersion}"
+  implementation "io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter:${gradle.otelSpringBootVersion}"
+  implementation "io.opentelemetry.contrib:opentelemetry-baggage-processor:${gradle.otelBaggageProcessorVersion}"
+
+  // Test
+  testImplementation "org.springframework.boot:spring-boot-starter-test:${gradle.springBootVersion}"
+  testImplementation "io.projectreactor:reactor-test:${gradle.reactorTestVersion}"
+  testRuntimeOnly "org.junit.platform:junit-platform-launcher:${gradle.junitPlatformLauncherVersion}"
 }
 
 tasks.named('test') {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
