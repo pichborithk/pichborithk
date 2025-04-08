@@ -10,8 +10,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Document(collation = "users")
-public class UserMongo {
+@Document(collection = "users")
+public class MongoUser {
 
     @Id
     private String id;

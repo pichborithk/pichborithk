@@ -70,8 +70,13 @@ dependencies {
   testImplementation "org.springframework.boot:spring-boot-starter-test:${gradle.springBootVersion}"
   testImplementation "io.projectreactor:reactor-test:${gradle.reactorTestVersion}"
   testRuntimeOnly "org.junit.platform:junit-platform-launcher:${gradle.junitPlatformLauncherVersion}"
+
+  testImplementation "org.springframework.boot:spring-boot-testcontainers"
+  testImplementation("org.testcontainers:junit-jupiter")
+  testImplementation "org.testcontainers:mongodb"
+
 }
 
-tasks.named('test') {
+tasks.named("test") {
   useJUnitPlatform()
 }

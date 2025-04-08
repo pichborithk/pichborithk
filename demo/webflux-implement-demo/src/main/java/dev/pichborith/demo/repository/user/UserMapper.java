@@ -6,7 +6,7 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public abstract class UserMapper {
 
-    public abstract UserMongo toPersistenceModel(User user);
+    public abstract MongoUser toPersistenceModel(User user);
 
-    public abstract User toResponseModel(UserMongo userMongo);
+    public abstract User toResponseModel(MongoUser mongoUser);
 }
