@@ -17,6 +17,7 @@ public class ItemService {
     ItemRepository itemRepository;
 
     public Mono<Item> createItem(Item item) {
+        var a = 1;
         return itemRepository.save(item);
     }
 
