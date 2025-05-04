@@ -12,6 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Collection;
 import java.util.Map;
 
+import static java.util.Optional.ofNullable;
+
 @Slf4j
 public class B3MultiHeadersB3Propagator implements TextMapPropagator {
 
@@ -35,10 +37,10 @@ public class B3MultiHeadersB3Propagator implements TextMapPropagator {
   public <C> Context extract(Context context, C carrier, TextMapGetter<C> getter) {
     String traceId = getter.get(carrier, "x-b3-traceId");
     String spanId = getter.get(carrier, "x-b3-spanId");
-//    String sampleId = getter.get(carrier, "x-b3-sampled");
+    String sampleId = getter.get(carrier, "x-b3-sampled");
     Context root;
 
-    if (traceId == null || spanId == null) {
+    if (traceId == null || spanId == null || sampleId == null) {
       String testId = getter.get(carrier, "test-id");
       if (testId != null) {
         CarrierWrapper<C> carrierWithB3 = getCarrierWrapper(carrier, getter, testId);
@@ -49,7 +51,7 @@ public class B3MultiHeadersB3Propagator implements TextMapPropagator {
     } else {
       root = delegate.extract(context, carrier, getter);
     }
-    BaggageBuilder baggege = getBaggegeBuilder(carrier, getter);
+    BaggageBuilder baggege = getBaggageBuilder(carrier, getter);
     return root.with(baggege.build());
   }
 
@@ -64,15 +66,11 @@ public class B3MultiHeadersB3Propagator implements TextMapPropagator {
     ));
   }
 
-
-  private <C> BaggageBuilder getBaggegeBuilder(C carrier, TextMapGetter<C> getter) {
-    String testId = getter.get(carrier, "test-id");
+  private <C> BaggageBuilder getBaggageBuilder(C carrier, TextMapGetter<C> getter) {
     BaggageBuilder baggage = Baggage.builder();
-    if (testId != null) {
-      baggage.put("testId", testId);
-    }
-
-    return baggage;
+    return ofNullable(getter.get(carrier, "test-id"))
+      .map(value -> baggage.put("test-id", value))
+      .orElse(baggage);
   }
 
 }

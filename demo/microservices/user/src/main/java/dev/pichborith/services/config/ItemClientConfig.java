@@ -28,6 +28,17 @@ public class ItemClientConfig {
       .clientConnector(new ReactorClientHttpConnector(
         HttpClient.newConnection().compress(true))
       )
+      .filter((request, next) -> {
+        HttpHeaders headers = new HttpHeaders();
+        headers.addAll(request.headers());
+        headers.add("test-id", "user");
+
+        ClientRequest newRequest = ClientRequest.from(request)
+          .headers(httpHeaders -> httpHeaders.addAll(headers))
+          .build();
+
+        return next.exchange(newRequest);
+      })
       .build();
   }
 

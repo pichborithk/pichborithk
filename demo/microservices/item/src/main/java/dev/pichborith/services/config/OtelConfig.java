@@ -85,6 +85,9 @@ public class OtelConfig {
     return ContextPropagators.create(
       TextMapPropagator.composite(new B3MultiHeadersB3Propagator())
     );
+//    return ContextPropagators.create(
+//      TextMapPropagator.composite(B3Propagator.injectingMultiHeaders())
+//    );
   }
 
   @Bean
