@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: item-service
+  config:
+    import: optional:configserver:http://localhost:8888
+
+otel:
+  exporter:
+    otlp:
+      endpoint: http://localhost:4317
+
+  propagators: [b3, b3_multi, tracecontext, baggage]

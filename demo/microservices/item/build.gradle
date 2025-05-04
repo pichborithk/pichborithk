@@ -1,0 +1,76 @@
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '3.4.5'
+  id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'dev.pichborith'
+version = '0.0.1-SNAPSHOT'
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(17)
+  }
+}
+
+configurations {
+  compileOnly {
+    extendsFrom annotationProcessor
+  }
+}
+
+repositories {
+  mavenCentral()
+}
+
+ext {
+  set('springCloudVersion', "2024.0.1")
+}
+
+dependencies {
+
+  configurations.configureEach {
+    resolutionStrategy.eachDependency { details ->
+      if (details.requested.group == 'io.opentelemetry'
+        && details.requested.name != 'opentelemetry-api-incubator'
+        && details.requested.name != 'opentelemetry-extension-annotations'
+        && details.requested.name != 'opentelemetry-sdk-extension-incubator'
+      ) {
+        details.useVersion '1.48.0'
+      }
+      if (details.requested.group == 'io.opentelemetry-contrib') {
+        details.useVersion '1.45.0-alpha'
+      }
+    }
+  }
+
+  implementation 'org.springframework.boot:spring-boot-starter-webflux'
+  implementation 'org.springframework.cloud:spring-cloud-starter-config'
+  implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+
+  // Otel
+  implementation "io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter:2.14.0"
+  implementation "io.opentelemetry.instrumentation:opentelemetry-logback-appender-1.0:2.14.0-alpha"
+  implementation "io.opentelemetry:opentelemetry-api"
+  implementation "io.opentelemetry:opentelemetry-sdk"
+  implementation "io.opentelemetry:opentelemetry-extension-trace-propagators"
+  implementation "io.opentelemetry.contrib:opentelemetry-baggage-processor:1.45.0-alpha"
+  implementation 'io.opentelemetry:opentelemetry-exporter-otlp'
+
+  compileOnly 'org.projectlombok:lombok'
+  annotationProcessor 'org.projectlombok:lombok'
+
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  testImplementation 'io.projectreactor:reactor-test'
+  testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+dependencyManagement {
+  imports {
+    mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+  }
+}
+
+tasks.named('test') {
+  useJUnitPlatform()
+}

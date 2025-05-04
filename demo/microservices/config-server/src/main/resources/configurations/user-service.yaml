@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      post: 27017
+      database: ms-users
+
+server:
+  port: 8090
+
+application:
+  config:
+    item-url: http://localhost:8222/api/items
