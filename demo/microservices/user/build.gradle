@@ -38,9 +38,9 @@ dependencies {
       ) {
         details.useVersion '1.48.0'
       }
-      if (details.requested.group == 'io.opentelemetry-contrib') {
-        details.useVersion '1.45.0-alpha'
-      }
+//      if (details.requested.group == 'io.opentelemetry-contrib') {
+//        details.useVersion '1.45.0-alpha'
+//      }
     }
   }
 
@@ -51,7 +51,7 @@ dependencies {
 
   // Otel
   implementation "io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter:2.14.0"
-  implementation "io.opentelemetry.instrumentation:opentelemetry-logback-appender-1.0:2.14.0-alpha"
+//  implementation "io.opentelemetry.instrumentation:opentelemetry-logback-appender-1.0:2.14.0-alpha"
   implementation "io.opentelemetry:opentelemetry-api"
   implementation "io.opentelemetry:opentelemetry-sdk"
   implementation "io.opentelemetry:opentelemetry-extension-trace-propagators"

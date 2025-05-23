@@ -5,12 +5,14 @@ import dev.pichborith.services.model.Item;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
@@ -21,9 +23,8 @@ public class UserController {
 
   @GetMapping
   public Flux<Item> getUsers() {
-
+    log.info("Start processing GET users endpoint");
     return itemClient.getItems();
   }
-
 
 }
