@@ -2,6 +2,7 @@ package dev.pichborith.services.controller;
 
 import dev.pichborith.services.integration.ItemClient;
 import dev.pichborith.services.model.Item;
+import io.opentelemetry.instrumentation.annotations.WithSpan;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

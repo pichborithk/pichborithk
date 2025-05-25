@@ -1,8 +1,6 @@
 package dev.pichborith.services.config;
 
 import dev.pichborith.services.integration.ItemClient;
-import io.opentelemetry.api.GlobalOpenTelemetry;
-import io.opentelemetry.context.Context;
 import io.opentelemetry.context.propagation.TextMapSetter;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,7 +10,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.web.reactive.function.client.ClientRequest;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 import reactor.netty.http.client.HttpClient;
+
+import static dev.pichborith.services.common.OneDataHeaders.ONE_DATA_CORRELATION_ID;
 
 @Configuration
 public class ItemClientConfig {
@@ -28,17 +29,18 @@ public class ItemClientConfig {
       .clientConnector(new ReactorClientHttpConnector(
         HttpClient.newConnection().compress(true))
       )
-      .filter((request, next) -> {
+      .filter((request, next) -> Mono.deferContextual(contextView -> {
+        String correlationId = contextView.getOrDefault(ONE_DATA_CORRELATION_ID, null);
         HttpHeaders headers = new HttpHeaders();
         headers.addAll(request.headers());
-        headers.add("test-id", "user");
+        headers.set(ONE_DATA_CORRELATION_ID, correlationId);
 
         ClientRequest newRequest = ClientRequest.from(request)
           .headers(httpHeaders -> httpHeaders.addAll(headers))
           .build();
 
         return next.exchange(newRequest);
-      })
+      }))
       .build();
   }
 

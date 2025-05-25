@@ -9,7 +9,6 @@ import io.opentelemetry.contrib.baggage.processor.BaggageSpanProcessor;
 import io.opentelemetry.exporter.otlp.logs.OtlpGrpcLogRecordExporter;
 import io.opentelemetry.exporter.otlp.metrics.OtlpGrpcMetricExporter;
 import io.opentelemetry.exporter.otlp.trace.OtlpGrpcSpanExporter;
-import io.opentelemetry.extension.trace.propagation.B3Propagator;
 import io.opentelemetry.sdk.OpenTelemetrySdk;
 import io.opentelemetry.sdk.logs.SdkLoggerProvider;
 import io.opentelemetry.sdk.logs.export.BatchLogRecordProcessor;
@@ -24,17 +23,20 @@ import io.opentelemetry.sdk.trace.export.SpanExporter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 
 import static java.util.Objects.requireNonNull;
 
 @Configuration
+@Profile("!test")
 public class OtelConfig {
 
   @Value("${otel.exporter.otlp.endpoint}")
   String exporterEndpoint;
 
   @Bean
-  OpenTelemetrySdk openTelemetrySdk(ContextPropagators contextPropagators,
+  OpenTelemetrySdk elfOpenTelemetry(ContextPropagators contextPropagators,
                                     SpanExporter spanExporter,
                                     LogRecordExporter logExporter,
                                     MetricExporter metricExporter) {
@@ -71,8 +73,15 @@ public class OtelConfig {
       .setLoggerProvider(loggerProvider)
       .setMeterProvider(meterProvider)
       .setPropagators(contextPropagators)
-      .build();
+      .buildAndRegisterGlobal();
 
+  }
+
+  @Bean
+  @Primary
+  OpenTelemetry openTelemetry(OpenTelemetrySdk openTelemetrySdk) {
+    requireNonNull(openTelemetrySdk, "openTelemetrySdk is required and missing.");
+    return openTelemetrySdk;
   }
 
   @Bean
@@ -104,11 +113,8 @@ public class OtelConfig {
 
   @Bean
   ContextPropagators contextPropagators() {
-//    return ContextPropagators.create(
-//      TextMapPropagator.composite(new B3MultiHeadersB3Propagator())
-//    );
     return ContextPropagators.create(
-      TextMapPropagator.composite(B3Propagator.injectingMultiHeaders())
+      TextMapPropagator.composite(new B3MultiHeadersB3Propagator())
     );
   }
 

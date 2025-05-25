@@ -2,6 +2,7 @@ package dev.pichborith.services.config;
 
 import io.opentelemetry.context.propagation.TextMapGetter;
 import lombok.Getter;
+import org.springframework.lang.NonNull;
 
 import java.util.Map;
 
@@ -19,7 +20,7 @@ public class CarrierWrapper<C> implements TextMapGetter<C> {
   }
 
   @Override
-  public Iterable<String> keys(C carrier) {
+  public Iterable<String> keys(@NonNull C carrier) {
     return delegate.keys(carrier);
   }
 
