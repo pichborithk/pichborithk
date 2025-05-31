@@ -1,4 +1,4 @@
-package dev.pichborith.services.model;
+package dev.pichborith.services.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

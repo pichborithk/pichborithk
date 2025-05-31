@@ -1,4 +1,4 @@
-package dev.pichborith.services.model;
+package dev.pichborith.services.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

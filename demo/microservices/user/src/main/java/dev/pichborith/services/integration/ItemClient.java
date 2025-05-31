@@ -1,7 +1,6 @@
 package dev.pichborith.services.integration;
 
-import dev.pichborith.services.model.Item;
-import io.opentelemetry.instrumentation.annotations.WithSpan;
+import dev.pichborith.services.domain.Item;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -17,7 +16,6 @@ public class ItemClient {
 
   WebClient webClient;
 
-  @WithSpan
   public Flux<Item> getItems() {
     log.info("Make request to item service");
     return webClient

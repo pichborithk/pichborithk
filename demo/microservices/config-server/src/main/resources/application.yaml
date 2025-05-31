@@ -8,9 +8,13 @@ spring:
       server:
         native:
           search-locations: classpath:/configurations
-  output:
-    ansi:
-      enabled: ALWAYS
+#  output:
+#    ansi:
+#      enabled: ALWAYS
+
+logging:
+  pattern:
+    console: "%red(%d{HH:mm:ss.SSS}) [%thread] %green(%-5level) %cyan(%logger{36}) - %msg%n"
 
 server:
   port: 8888

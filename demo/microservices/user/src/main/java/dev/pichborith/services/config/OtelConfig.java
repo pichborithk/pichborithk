@@ -21,6 +21,7 @@ import io.opentelemetry.sdk.resources.Resource;
 import io.opentelemetry.sdk.trace.SdkTracerProvider;
 import io.opentelemetry.sdk.trace.export.BatchSpanProcessor;
 import io.opentelemetry.sdk.trace.export.SpanExporter;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -77,6 +78,11 @@ public class OtelConfig {
       .buildAndRegisterGlobal();
 
   }
+
+//  @PostConstruct
+//  public void enableContextPropagation() {
+//    ReactorContextPr
+//  }
 
   @Bean
   @Primary

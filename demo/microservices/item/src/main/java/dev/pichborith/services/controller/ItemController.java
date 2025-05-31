@@ -1,6 +1,6 @@
 package dev.pichborith.services.controller;
 
-import dev.pichborith.services.model.Item;
+import dev.pichborith.services.domain.Item;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
-
-import java.util.List;
 
 @Slf4j
 @RestController

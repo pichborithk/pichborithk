@@ -3,13 +3,48 @@ spring:
     name: user-service
   config:
     import: optional:configserver:http://localhost:8888
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/microservices_demo
+#      host: localhost
+#      port: 27017
+#      database: microservices_demo
+#      username: yourUsername
+#      password: yourPassword
+
+#mongodb:
+#  connection:
+#    connectTimeoutMS: 300000
+#    maxPoolSize: 100
+#    maxIdleTimeMS: 1800000
+#    waitQueueTimeoutMS: 30000
+#    socketTimeoutMS: 10000
+#    maxLifeTimeMS: 600000
+
 
 otel:
   exporter:
     otlp:
       endpoint: http://localhost:4317
 
-  logs:
-    exporter: otlp
+  instrumentation:
+    mongo:
+      enabled: true
+      statement-sanitizer:
+        enabled: true
+    reactor:
+      enabled: true
+  #  logs:
+#    exporter: otlp
 
-  propagators: [b3, b3_multi, tracecontext, baggage]
+  propagators: [ b3, b3_multi, tracecontext, baggage ]
+
+  logging:
+    level:
+      org:
+        springframework:
+          web:
+            reactive:
+              function:
+                client:
+                  ExchangeFunctions: TRACE

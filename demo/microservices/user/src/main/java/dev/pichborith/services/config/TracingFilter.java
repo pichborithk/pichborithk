@@ -1,15 +1,8 @@
 package dev.pichborith.services.config;
 
-import io.opentelemetry.api.trace.Span;
-import io.opentelemetry.api.trace.SpanKind;
-import io.opentelemetry.api.trace.StatusCode;
-import io.opentelemetry.api.trace.Tracer;
-import io.opentelemetry.context.Context;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.context.annotation.Profile;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
@@ -18,11 +11,7 @@ import org.springframework.web.server.WebFilter;
 import org.springframework.web.server.WebFilterChain;
 import reactor.core.publisher.Mono;
 
-import java.util.Optional;
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
-
-import static dev.pichborith.services.common.OneDataHeaders.ONE_DATA_CORRELATION_ID;
 
 @Slf4j
 @Component
@@ -30,42 +19,33 @@ import static dev.pichborith.services.common.OneDataHeaders.ONE_DATA_CORRELATION
 @Profile("!test")
 public class TracingFilter implements WebFilter {
 
-  private final Tracer tracer;
+//  private final Tracer tracer;
 
   @Override
   @NonNull
   public Mono<Void> filter(ServerWebExchange exchange, @NonNull WebFilterChain chain) {
     long startTime = System.nanoTime();
     ServerHttpRequest request = exchange.getRequest();
-    HttpHeaders headers = request.getHeaders();
+//    HttpHeaders headers = request.getHeaders();
     String path = request.getURI().getPath();
     String method = request.getMethod().name();
 
-    String correlationId = Optional.ofNullable(headers.getFirst(ONE_DATA_CORRELATION_ID))
-      .filter(StringUtils::isNotBlank)
-      .orElse(UUID.randomUUID().toString());
+//    String correlationId = Optional.ofNullable(headers.getFirst(ONE_DATA_CORRELATION_ID))
+//      .filter(StringUtils::isNotBlank)
+//      .orElse(UUID.randomUUID().toString());
+//    System.out.println("Filter");
 
-    Span span = tracer.spanBuilder(method + " " + path)
-      .setSpanKind(SpanKind.SERVER)
-      .setParent(Context.current())
-      .setAttribute("http.method", method)
-      .setAttribute("http.path", path)
-      .setAttribute(ONE_DATA_CORRELATION_ID, correlationId)
-      .startSpan();
-
-//    Baggage baggage = Baggage.current().toBuilder()
-//      .put("http.method", method)
-//      .put("http.path", path)
-//      .put("one-data-correlation-id", correlationId)
-//      .build();
-//
-//    try (var ignored = Context.current().with(baggage).makeCurrent()) {
-//      log.info("{} Request API Address: {}", method, path);
-//    }
+//    Span span = tracer.spanBuilder(method + " " + path)
+//      .setSpanKind(SpanKind.SERVER)
+//      .setParent(Context.current())
+//      .setAttribute("http.method", method)
+//      .setAttribute("http.path", path)
+//      .setAttribute(ONE_DATA_CORRELATION_ID, correlationId)
+//      .startSpan();
 
     return chain.filter(exchange)
       .doOnSuccess(done -> {
-        span.setStatus(StatusCode.OK);
+//        span.setStatus(StatusCode.OK);
         log.info("{} Request API Address: {}, Response Time: {}ms, HttpStatus: {}",
                  method,
                  path,
@@ -73,11 +53,11 @@ public class TracingFilter implements WebFilter {
                  exchange.getResponse().getStatusCode());
       })
       .doOnError(error -> {
-        span.setStatus(StatusCode.ERROR, error.getMessage());
-        span.recordException(error);
+//        span.setStatus(StatusCode.ERROR, error.getMessage());
+//        span.recordException(error);
         log.error("Exception in API {}: {}", path, error.getMessage());
-      })
-      .contextWrite(ctx -> ctx.put(ONE_DATA_CORRELATION_ID, correlationId))
-      .doFinally(signal -> span.end());
+      });
+//      .contextWrite(ctx -> ctx.put(ONE_DATA_CORRELATION_ID, correlationId))
+//      .doFinally(signal -> span.end());
   }
 }

@@ -8,12 +8,14 @@ import io.opentelemetry.context.propagation.TextMapPropagator;
 import io.opentelemetry.context.propagation.TextMapSetter;
 import io.opentelemetry.extension.trace.propagation.B3Propagator;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.Optional;
+import java.util.UUID;
 
 import static dev.pichborith.services.common.OneDataHeaders.*;
 
@@ -71,10 +73,15 @@ public class B3MultiHeadersB3Propagator implements TextMapPropagator {
   private <C> BaggageBuilder getBaggageBuilder(C carrier, TextMapGetter<C> getter) {
     BaggageBuilder baggage = Baggage.current().toBuilder();
 
-    Optional.ofNullable(getter.get(carrier, ONE_DATA_CORRELATION_ID))
-      .map(value -> baggage.put(ONE_DATA_CORRELATION_ID, value));
+    baggage.put(
+      ONE_DATA_CORRELATION_ID,
+      Optional.ofNullable(getter.get(carrier, ONE_DATA_CORRELATION_ID))
+        .filter(StringUtils::isNotBlank)
+        .orElseGet(() -> UUID.randomUUID().toString())
+    );
     Optional.ofNullable(getter.get(carrier, ONE_DATA_TRACE_ID))
       .map(value -> baggage.put(ONE_DATA_TRACE_ID, value));
+    baggage.put("test", "test value");
 
     return baggage;
   }

@@ -38,16 +38,17 @@ dependencies {
       ) {
         details.useVersion '1.48.0'
       }
-//      if (details.requested.group == 'io.opentelemetry-contrib') {
-//        details.useVersion '1.45.0-alpha'
-//      }
     }
   }
-
-  implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
   implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+  // Micro services
   implementation 'org.springframework.cloud:spring-cloud-starter-config'
   implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+
+  // MongoDb
+  implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+
 
   // Otel
   implementation "io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter:2.14.0"
@@ -55,12 +56,19 @@ dependencies {
   implementation "io.opentelemetry:opentelemetry-api"
   implementation "io.opentelemetry:opentelemetry-sdk"
   implementation "io.opentelemetry:opentelemetry-extension-trace-propagators"
+  implementation "io.opentelemetry.instrumentation:opentelemetry-reactor-3.1:2.14.0-alpha"
   implementation "io.opentelemetry.contrib:opentelemetry-baggage-processor:1.45.0-alpha"
   implementation 'io.opentelemetry:opentelemetry-exporter-otlp'
+//  implementation "io.opentelemetry.instrumentation:opentelemetry-mongo-3.1:2.14.0-alpha"
+//  implementation 'io.opentelemetry.instrumentation:opentelemetry-spring-web-3.1'
+//  implementation 'io.opentelemetry.instrumentation:opentelemetry-spring-webflux-5.3'
+//  implementation 'io.opentelemetry.instrumentation:opentelemetry-instrumentation-annotations'
 
+  // Lombok
   compileOnly 'org.projectlombok:lombok'
   annotationProcessor 'org.projectlombok:lombok'
 
+  // Test
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
   testImplementation 'io.projectreactor:reactor-test'
   testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
