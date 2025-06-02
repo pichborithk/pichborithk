@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_package = "dev.pichborith.grpc";
+option java_multiple_files = true;
+
+service UserService {
+  rpc CreateUser (UserRequest) returns (UserResponse);
+  rpc GetUserById (UserIdRequest) returns (UserResponse);
+}
+
+message UserRequest {
+  string name = 1;
+  Role role = 2;
+}
+
+message UserIdRequest {
+  string id = 1;
+}
+
+message UserResponse {
+  string id = 1;
+  string name = 2;
+  Role role = 3;
+}
+
+enum Role {
+  USER = 0;
+  ADMIN = 1;
+}
+

@@ -19,7 +19,8 @@ import reactor.core.publisher.Mono;
 @Slf4j
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
-public class UserService {
+public class
+UserService {
 
   UserRepository userRepository;
   Tracer tracer;
