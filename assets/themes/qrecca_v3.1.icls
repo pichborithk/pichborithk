@@ -1149,8 +1149,8 @@
     </option>
     <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="ff8833" />
-        <option name="EFFECT_COLOR" value="ff8833" />
+        <option name="FOREGROUND" value="f8f8f8" />
+        <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
