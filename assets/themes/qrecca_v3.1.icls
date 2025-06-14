@@ -1,7 +1,7 @@
 <scheme name="qrecca_v3.1" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="ide">PyCharmCore</property>
-    <property name="ideVersion">2025.1.1.1.0.0</property>
+    <property name="ide">Idea</property>
+    <property name="ideVersion">2025.1.2.0.0</property>
     <property name="originalScheme">qrecca_v3.1</property>
   </metaInfo>
   <colors>
@@ -158,7 +158,7 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="" />
+    <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA" />
     <option name="ANONYMOUS_CLASS_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="ff66b2" />
@@ -532,7 +532,7 @@
     </option>
     <option name="CUSTOM_STRING_ATTRIBUTES" baseAttributes="DEFAULT_STRING" />
     <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="Class" baseAttributes="" />
+    <option name="Class" baseAttributes="CLASS_NAME_ATTRIBUTES" />
     <option name="CodeWithMe.USER_1_MARKER">
       <value>
         <option name="FOREGROUND" value="2c2d34" />
@@ -748,7 +748,7 @@
     <option name="DEFAULT_LOCAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="f8f8f2" />
-        <option name="EFFECT_COLOR" value="f8f8f2" />
+        <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -785,7 +785,9 @@
     <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="f8f8f2" />
+        <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_COLOR" value="f8f8f2" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_REASSIGNED_PARAMETER">
@@ -2772,8 +2774,7 @@
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="fbfbfb" />
-        <option name="BACKGROUND" value="52cc93" />
-        <option name="EFFECT_COLOR" value="52cc93" />
+        <option name="BACKGROUND" value="3d4c45" />
       </value>
     </option>
     <option name="SLIM_CLASS">
@@ -2879,7 +2880,7 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
-    <option name="STATIC_METHOD_ATTRIBUTES" baseAttributes="" />
+    <option name="STATIC_METHOD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_METHOD" />
     <option name="SUGGESTION">
       <value>
         <option name="EFFECT_COLOR" value="5c6d80" />
@@ -2907,7 +2908,7 @@
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
-    <option name="Static method access" baseAttributes="" />
+    <option name="Static method access" baseAttributes="STATIC_METHOD_ATTRIBUTES" />
     <option name="TAG_ATTR_KEY">
       <value>
         <option name="FOREGROUND" value="85ffef" />
@@ -2940,8 +2941,7 @@
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="fbfbfb" />
-        <option name="BACKGROUND" value="52cc93" />
-        <option name="EFFECT_COLOR" value="52cc93" />
+        <option name="BACKGROUND" value="3d4c45" />
       </value>
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
@@ -3015,8 +3015,7 @@
     <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="fbfbfb" />
-        <option name="BACKGROUND" value="52cc93" />
-        <option name="EFFECT_COLOR" value="52cc93" />
+        <option name="BACKGROUND" value="3d4c45" />
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
