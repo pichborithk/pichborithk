@@ -1,7 +1,7 @@
 <scheme name="qrecca_v1.1" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="ide">Idea</property>
-    <property name="ideVersion">2025.1.2.0.0</property>
+    <property name="ide">AndroidStudio</property>
+    <property name="ideVersion">2025.1.1.13</property>
     <property name="originalScheme">qrecca_v1.1</property>
   </metaInfo>
   <colors>
@@ -595,6 +595,11 @@
     <option name="CodeWithMe.USER_6_SELECTION">
       <value>
         <option name="BACKGROUND" value="e64747" />
+      </value>
+    </option>
+    <option name="ComposableCallTextAttributes">
+      <value>
+        <option name="FOREGROUND" value="ef4444" />
       </value>
     </option>
     <option name="DEBUGGER_INLINED_VALUES">
@@ -1280,27 +1285,38 @@
         <option name="BACKGROUND" value="272e34" />
       </value>
     </option>
-    <option name="KOTLIN_ANNOTATION">
+    <option name="KOTLIN_ABSTRACT_CLASS">
       <value>
-        <option name="FOREGROUND" value="8dc6ef" />
-        <option name="EFFECT_TYPE" value="1" />
+        <option name="FOREGROUND" value="e89cff" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="KOTLIN_CLOSURE_DEFAULT_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="9d8df6" />
-        <option name="FONT_TYPE" value="1" />
+        <option name="FOREGROUND" value="e89cff" />
+        <option name="FONT_TYPE" value="3" />
+      </value>
+    </option>
+    <option name="KOTLIN_CONSTRUCTOR">
+      <value>
+        <option name="FOREGROUND" value="ff00a5" />
+        <option name="FONT_TYPE" value="3" />
       </value>
     </option>
     <option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
       <value>
-        <option name="FOREGROUND" value="8dc6ef" />
+        <option name="FOREGROUND" value="e67a" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
     <option name="KOTLIN_ENUM_ENTRY">
       <value>
-        <option name="FOREGROUND" value="85ffef" />
+        <option name="FOREGROUND" value="ff4242" />
+      </value>
+    </option>
+    <option name="KOTLIN_EXCLEXCL">
+      <value>
+        <option name="FOREGROUND" value="5c89f2" />
       </value>
     </option>
     <option name="KOTLIN_IMPLICIT_EXHAUSTIVE_WHEN">
@@ -1309,6 +1325,7 @@
     <option name="KOTLIN_LABEL">
       <value>
         <option name="FOREGROUND" value="8dc6ef" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="KOTLIN_MUTABLE_VARIABLE">
@@ -1318,17 +1335,29 @@
     </option>
     <option name="KOTLIN_NAMED_ARGUMENT">
       <value>
-        <option name="FOREGROUND" value="f0a1ff" />
+        <option name="FOREGROUND" value="8dc6ef" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="KOTLIN_PACKAGE_FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="e67a" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="KOTLIN_PACKAGE_PROPERTY">
       <value>
-        <option name="FOREGROUND" value="85ffef" />
-        <option name="FONT_TYPE" value="2" />
+        <option name="FOREGROUND" value="ff4242" />
+        <option name="FONT_TYPE" value="3" />
       </value>
     </option>
     <option name="KOTLIN_PROPERTY_WITH_BACKING_FIELD">
       <value />
+    </option>
+    <option name="KOTLIN_QUEST">
+      <value>
+        <option name="FOREGROUND" value="5c89f2" />
+      </value>
     </option>
     <option name="KOTLIN_SMART_CAST_RECEIVER">
       <value />
@@ -1338,7 +1367,19 @@
     </option>
     <option name="KOTLIN_SMART_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="85ffef" />
+        <option name="FOREGROUND" value="5c89f2" />
+        <option name="FONT_TYPE" value="3" />
+      </value>
+    </option>
+    <option name="KOTLIN_TYPE_ALIAS">
+      <value>
+        <option name="FOREGROUND" value="8cef7c" />
+      </value>
+    </option>
+    <option name="KOTLIN_TYPE_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="e89cff" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="LESS_VARIABLE" baseAttributes="" />
