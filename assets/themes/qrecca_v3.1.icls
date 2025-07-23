@@ -123,8 +123,8 @@
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="bb86fc" />
-        <option name="FONT_TYPE" value="3" />
+        <option name="FOREGROUND" value="ffa1d3" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="ANGLE_BRACKETS_RAINBOW_COLOR0">
@@ -729,7 +729,8 @@
     </option>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
-        <option name="FOREGROUND" value="bb86fc" />
+        <option name="FOREGROUND" value="ffa1d3" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">

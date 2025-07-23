@@ -123,7 +123,7 @@
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="e6c72e" />
+        <option name="FOREGROUND" value="fff441" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -729,7 +729,7 @@
     </option>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
-        <option name="FOREGROUND" value="e6c72e" />
+        <option name="FOREGROUND" value="fff441" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>

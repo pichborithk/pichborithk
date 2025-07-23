@@ -125,7 +125,7 @@
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="fed2e2" />
+        <option name="FOREGROUND" value="aaaaf7" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -731,7 +731,7 @@
     </option>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
-        <option name="FOREGROUND" value="fed2e2" />
+        <option name="FOREGROUND" value="aaaaf7" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
