@@ -21,5 +21,5 @@ public class User {
   String id;
   String name;
   Role role;
-
+  String fullName;
 }

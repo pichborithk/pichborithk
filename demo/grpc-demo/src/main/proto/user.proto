@@ -11,6 +11,7 @@ service UserService {
 message UserRequest {
   string name = 1;
   Role role = 2;
+  string full_name = 3;
 }
 
 message UserIdRequest {
@@ -21,6 +22,7 @@ message UserResponse {
   string id = 1;
   string name = 2;
   Role role = 3;
+  string full_name = 4;
 }
 
 enum Role {

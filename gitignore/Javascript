@@ -60,6 +60,7 @@ results/
 # Miscellaneous
 ############################
 *.local
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -151,6 +152,7 @@ Icon
 .Spotlight-V100
 .Trashes
 ._*
+Icon?
 
 ## Linux
 *~

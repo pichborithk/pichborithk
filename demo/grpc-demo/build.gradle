@@ -42,6 +42,10 @@ dependencies {
 
   compileOnly 'org.projectlombok:lombok'
   annotationProcessor 'org.projectlombok:lombok'
+  implementation "org.mapstruct:mapstruct:1.6.3"
+  annotationProcessor "org.mapstruct:mapstruct-processor:1.6.3"
+  annotationProcessor "org.projectlombok:lombok-mapstruct-binding:0.2.0"
+  annotationProcessor "no.entur.mapstruct.spi:protobuf-spi-impl:1.47"
 
   testImplementation 'org.springframework.boot:spring-boot-starter-test'
   testImplementation 'io.projectreactor:reactor-test'
@@ -72,6 +76,17 @@ protobuf {
       }
     }
   }
+}
+
+def additionalCompilerArgs = [
+  "-Amapstruct.defaultComponentModel=spring",
+  "-Amapstruct.unmappedTargetPolicy=ERROR",
+  "-Amapstruct.defaultInjectionStrategy=constructor"
+]
+
+compileJava {
+  options.encoding = 'UTF-8'
+  options.compilerArgs += additionalCompilerArgs
 }
 
 tasks.named('test') {
